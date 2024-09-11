@@ -132,14 +132,14 @@ clear();
             retryCount = 0;
 
             if (playPasses <= 0) {
-                console.log('No play passes left');
+                console.info('No play passes left');
                 contPlayGame = false;
                 break;
             }
 
-            console.log(`- ${gameCounter}. Play game..`)
+            console.info(`- ${gameCounter}. Play game..`)
 
-            console.log(` - ${gameCounter}. Start Play game..`)
+            console.info(` - ${gameCounter}. Start Play game..`)
             const _points = Math.floor(
                 Math.random() * (500 - 250) + 250
             );
@@ -187,6 +187,6 @@ clear();
         console.info(" - [ DONE ALL ] ")
     }
 
-    const accessToken = '';
+    const accessToken = 'Bearer xxxxxxx';
     await playAndClaimGame(accessToken);
 })()
